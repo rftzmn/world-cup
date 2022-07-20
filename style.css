@@ -1,7 +1,9 @@
 body{
     font-family: 'Edu SA Beginner', cursive;
+    margin: 0;
 }
 .banner{
+    
     background-color: black;
     color: white;
     display: inline-grid;
@@ -11,45 +13,102 @@ body{
     padding: 20px 30px 0px 30px;
     border-radius: 20px;
 }
+.banner-description{
+    margin: 111px 0px 0px 106px
+}
 .banner-description h1{
     font-weight: 800;
     font-size: 5vw;
 }
+
 button{
     padding: 5px 20px;
     background-color: red;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 5px;
 }
 button:hover{
     cursor: pointer;
 }
 .banner-photo img{
-    text-align: center;
-    width: 100%;
+    width: 581px;
     height: 100%;
 }
 menu{
-    margin: 50px 70px;
+    margin: 50px 50px;
     padding: 20px 30px 0px 30px;
+    display: inline-grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 24px;
 }
 .navbar{
+    height: 312px;
+    width: 312px;
     background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    border-radius: 10px;
 }
 .navbar button{
-    width: 70%;
-    margin: 10px;
+    width: 252px;
+    margin: 20px;
     padding: 15px 30px;
     background-color: white;
     color: black;
 }
-.navbar button:hover{
+.navbar .selected-button{
     background-color: red;
+    color: white;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+}
+.blog{
+    width: 312px;
+    height: 362px;
+    border: solid 1px gray;
+    border-radius: 10px;
+}
+.blog-description{
+    margin: 20px 10px 0px 15px;
+    
+}
+.transfer{
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    
+}
+.blog-footer{
+    display: flex;
+    margin-bottom: 10px;
+}
+.blog-footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    margin: 0;
+}
+footer hr{
+    margin: 50px 0;
+}
+.footer-nav a{
+    text-decoration: none;
+    padding: 0px 25px 0px 25px;
     color: white;
 }
