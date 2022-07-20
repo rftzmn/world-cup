@@ -1,70 +1,76 @@
 body{
     font-family: 'Edu SA Beginner', cursive;
     margin: 0;
+    padding: 0;
 }
-.banner{
-    
-    background-color: black;
-    color: white;
-    display: inline-grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
+main{
     margin: 50px 70px;
     padding: 20px 30px 0px 30px;
+}
+.banner{
+    background-color: black;
+    color: white;
     border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    margin-bottom: 100px;
 }
 .banner-description{
-    margin: 111px 0px 0px 106px
+    margin: 56px 0px 0px 53px;
+    width: 45%;
 }
 .banner-description h1{
     font-weight: 800;
-    font-size: 5vw;
+    font-size: 50px;
 }
-
-button{
-    padding: 5px 20px;
+.live-button{
+    padding: 10px 20px;
     background-color: red;
     color: white;
     font-size: 18px;
     border-radius: 5px;
+    border-style: none;
+    text-decoration: none;
 }
-button:hover{
-    cursor: pointer;
+
+.banner-photo{
+    width: 40%;
 }
 .banner-photo img{
-    width: 581px;
+    width: 100%;
     height: 100%;
 }
-menu{
-    margin: 50px 50px;
-    padding: 20px 30px 0px 30px;
-    display: inline-grid;
-    grid-template-columns: 1fr 3fr;
-    grid-gap: 24px;
-}
-.navbar{
-    height: 312px;
+nav{
     width: 312px;
+    height: 312px;
+    padding: 10px 0;
+    /* margin-right: 20px; */
     background-color: black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     border-radius: 10px;
+
 }
-.navbar button{
-    width: 252px;
-    margin: 20px;
-    padding: 15px 30px;
+.nav-blogs nav a{
+    /* padding: 10px 10px; */
+    margin: 20px 30px;
     background-color: white;
     color: black;
 }
-.navbar .selected-button{
+.nav-blogs{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+}
+
+#blog{
     background-color: red;
     color: white;
 }
 .blogs{
-    display: grid;
+    display: inline-grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 24px;
 }
@@ -76,7 +82,6 @@ menu{
 }
 .blog-description{
     margin: 20px 10px 0px 15px;
-    
 }
 .transfer{
     text-decoration: none;
@@ -84,8 +89,7 @@ menu{
     border-width: 1px;
     border-color: black;
     border-radius: 5px;
-    padding: 5px 10px;
-    
+    padding: 5px 10px; 
 }
 .blog-footer{
     display: flex;
@@ -97,18 +101,82 @@ menu{
     align-items: center;
     margin-right: 25px;
 }
+.view-all{
+    text-align: center;
+    margin: 40px 0;
+    display: none;
+}
 footer{
     background-color: black;
     color: white;
     text-align: center;
-    padding: 100px;
+    padding: 70px;
     margin: 0;
 }
 footer hr{
     margin: 50px 0;
+    color: azure;
+    border: solid 1px gray;
 }
 .footer-nav a{
     text-decoration: none;
     padding: 0px 25px 0px 25px;
     color: white;
+}
+.social-icon{
+    margin-top: 50px;
+}
+.social-icon a{
+    padding: 0 15px 0 15px;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .banner-description{
+        margin: 30px 0px 0px 40px;
+    }
+    .banner-description h1{
+        font-size: 40px;
+    }
+    .banner-description p{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .nav-blogs{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+    .nav-blogs nav a{
+        width: 230px;
+        padding: 10px 20px;
+        margin: 0 20px;
+        background-color: white;
+        color: black;
+        border: solid 1px gray;
+    }
+    .blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hide-for-tablet{
+        display: none;
+    }
+    .view-all{
+        display: block;
+    }
+    .footer-nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    footer .footer-nav a{
+        padding: 20px 40px;
+    }
 }
