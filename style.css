@@ -32,6 +32,9 @@ main{
     border-radius: 5px;
     border-style: none;
     text-decoration: none;
+    
+}
+.banner-description .live-button{
     position: absolute;
     transform: skew(20deg);
     animation: skew 3s ease-in-out 0.5s infinite alternate;
@@ -210,7 +213,9 @@ footer hr{
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    
+    .live-button{
+        left: 285px;
+    }
     .nav-blogs{
         display: flex;
         flex-direction: column;
