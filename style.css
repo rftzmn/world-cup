@@ -81,6 +81,7 @@ nav{
     background-color: red;
     color: white;
 }
+
 .blogs{
     display: inline-grid;
     grid-template-columns: repeat(3, 1fr);
@@ -88,7 +89,6 @@ nav{
 }
 .blog{
     width: 312px;
-    height: 362px;
     border: solid 1px gray;
     border-radius: 10px;
 }
@@ -112,6 +112,23 @@ nav{
     justify-content: center;
     align-items: center;
     margin-right: 25px;
+}
+.match{
+    height: 242px;
+}
+.country-photo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+.country-photo span{
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0 10px;
+}
+.match-description{
+    text-align: center;
 }
 .view-all{
     text-align: center;
