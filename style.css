@@ -225,4 +225,8 @@ footer hr{
         margin-top: 20px;
         display: block;
     }
+    .live-button{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
 }
