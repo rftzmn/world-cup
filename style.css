@@ -1,0 +1,55 @@
+body{
+    font-family: 'Edu SA Beginner', cursive;
+}
+.banner{
+    background-color: black;
+    color: white;
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin: 50px 70px;
+    padding: 20px 30px 0px 30px;
+    border-radius: 20px;
+}
+.banner-description h1{
+    font-weight: 800;
+    font-size: 5vw;
+}
+button{
+    padding: 5px 20px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
+.banner-photo img{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+menu{
+    margin: 50px 70px;
+    padding: 20px 30px 0px 30px;
+}
+.navbar{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.navbar button{
+    width: 70%;
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: white;
+    color: black;
+}
+.navbar button:hover{
+    background-color: red;
+    color: white;
+}
